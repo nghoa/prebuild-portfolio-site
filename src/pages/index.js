@@ -1,12 +1,21 @@
-import React from "react";
-import { Layout } from "components/common";
-import { Intro } from "components/landing";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import App from '../components/App';
+import { headData } from '../mock/data';
+import '../styles/main.scss';
 
+export default() => {
+  const { title, lang, description } = headData;
 
-const Home = () => {
-  <Layout>
-    <Intro />
-  </Layout>
+  return(
+    <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>{title}</title>
+      <html lang={lang} />
+      <meta name="description" content={description} />
+    </Helmet>
+    <App />
+    </>
+  );
 };
-
-export default Home;
