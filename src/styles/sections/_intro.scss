@@ -26,7 +26,7 @@
   }
 
   .hero-title {
-    font-size: 5.6rem;
+    font-size: 4.2rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
@@ -62,4 +62,8 @@
       }
     }
   }
+}
+
+.text-color-main {
+  color: $secondary-color;
 }

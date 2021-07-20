@@ -2,4 +2,15 @@
 @import './abstracts/variables';
 @import './abstracts/helpers';
 
+@import './base/base';
+@import './base/typography';
+
+@import './components/buttons';
+
+@import './layout/sections';
+
 @import './sections/intro';
+@import './sections/about';
+
+@import './vendor/css/font-awesome.min.css';
+
